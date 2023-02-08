@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <link href="other.css" rel="stylesheet">
+</head>
+<body>
+  <!--Page Home--> 
+  <div class ="relative bg-[url('./assets/images/bg-page1.svg')] bg-cover ">
+    <!--Nav bar-->
+    <div class ="flex h-10 w-full ">
+      <div class="absolute h-10 w-full bg-black opacity-50 bg-cover "></div>
+      
+      <div class="flex w-full z-10 justify-between ">
+        <!--Logo-->
+        <div class ="text-logo font-bold px-2 text-lg items-center flex">
+          <a href ="#">
+          DIVINE NETWORK
+          </a>
+        </div>
+        
+        <!--Desktop menu list-->
+        <div class ="hidden sm:flex z-10 items-center pr-16">
+          <a target="_blank" href="https://divine-network.gitbook.io/divine-network/" class="text-base text-white font-semibold px-2.5 hover:text-btn-blue z-20">Documentation</a>
+          <a target="_blank" href="https://github.com/divine-network/divine-network/blob/main/packages/client/docs/README.md" class="text-base text-white font-semibold px-2.5 hover:text-btn-sea">Build</a>
+          <a target="_blank" href="https://github.com/divine-network/divine-network" class="text-base text-white font-semibold px-2.5 hover:text-btn-pink">Github</a>
+        </div>
+      </div>
+
+        
+        
+      <!--Mobile menu button--> 
+        <button class="mobile-menu-button z-20 sm:hidden sm:pr-20 pr-4  ">
+          <svg class=" w-10 h-8 text-white hover:text-violet-500 z-20 "
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+    </div>
+      
+    <!-- mobile menu -->
+			<div class="hidden mobile-menu absolute z-20 ">
+				<ul class="w-screen bg-cover bg-[url('./assets/nav.svg')]">
+					<li class=""><a target="_blank" href="https://divine-network.gitbook.io/divine-network/" class="text-center font-bold block text-sm px-2 py-4 text-white hover:bg-violet-500 border-b-2 border-white">Documentation</a></li>
+					<li><a target="_blank" href="https://github.com/divine-network/divine-network/blob/main/packages/client/docs/README.md" class=" text-center font-bold block text-sm px-2 py-4  hover:bg-violet-500 transition text-white duration-300 border-b-2 border-white ">Build</a></li>
+					<li><a target="_blank" href="https://github.com/divine-network/divine-network" class=" text-center font-bold block text-sm px-2 py-4  hover:bg-violet-500 transition text-white duration-300 border-b-2 border-white">Github</a></li>
+        </ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+
+
+
+      <!--page1-->
+      <div class="flex sm:h-60 h-40 justify-evenly lg:pt-6 pt-2">
+        <img src ="assets/bird3.png" class="sm:h-40 h-20 sm:pt-12 pt-6 md:pl-32 sm:pr-12 pl-0 hover:scale-105 transition-all duration-500"/>
+        <img src ="assets/logo.png" class="hover:scale-125 transition-all duration-500"/>
+        <img src ="assets/bird4.png"class="sm:h-40 h-20 sm:pt-12 pt-6 md:pr-32 sm:pr-12 pr-0 hover:scale-105 transition-all duration-500"/>
+      </div> 
+      
+      <div class="flex sm:h-24 h-20 sm:justify-evenly justify-center py-1 items-center z-10">
+        <img src ="assets/bird1.png" class="sm:h-20 h-8 sm:pl-6 pl-1  z-10 hover:scale-125 transition-all duration-500"/>
+        
+        <span class="sm:text-5xl text-2xl font-bold align-middle inline-block z-10 text-logo hover:scale-125 transition-all duration-500">
+          DIVINE NETWORK
+        </span>
+
+        <img src ="assets/bird2.png"class="sm:h-20 h-8 sm:pr-6 pr-1 z-10 hover:scale-125 transition-all duration-500"/>
+      </div>
+      
+      <div class="flex sm:text-3xl text-base justify-center text-white font-semibold z-10 "><div class="z-10">A Layer 2 EVM Rollup built on top of Algorand</div></div>
+      
+      <div class="flex justify-center sm:gap-4 gap-2 pt-2">
+        <button class="flex sm:w-24 w-14 justify-center pt-1 sm:h-16 h-10">
+          <div class ="flex z-10 w-full h-5/6 bg-btn-blue  sm:text-xl text-base font-bold self-center items-center justify-center rounded-lg hover:bg-white">
+            <a href="https://divine-network.gitbook.io/divine-network/" target="_blank" class="inline-block ">
+            Docs
+            </a>
+          </div>
+        </button>
+
+        
+
+        <button class="flex sm:w-24 w-14 justify-center pt-1 sm:h-16 h-10">
+          <div class ="flex z-10 w-full h-5/6 bg-btn-sea sm:text-xl text-base font-bold self-center items-center justify-center rounded-lg hover:bg-white">
+            <a target="_blank" href="https://github.com/divine-network/divine-network/blob/main/packages/client/docs/README.md" class="inline-block ">
+            Build
+            </a>
+          </div>
+        </button>
+
+        <button class="flex sm:w-24 w-14 justify-center pt-1 sm:h-16 h-10">
+          <div class ="flex z-10 w-full h-5/6 bg-btn-pink sm:text-xl text-base font-bold self-center items-center justify-center rounded-lg hover:bg-white">
+            <a target="_blank" href="https://github.com/divine-network/divine-network"  class="inline-block ">
+            Github
+            </a>
+          </div>
+        </button>
+      </div>
+
+      <div class="absolute lg:top-60 md:top-72"><img src="assets/page1-footer.png"/></div>
+
+    <!--Page 2-->
+    <div class="bg-black bg-cover">
+      <!--Header-->
+      <div class = "flex z-10 justify-center">
+        <div class = " flex z-10 text-white lg:pt-96 sm:pt-64 pt-60 z-10 space-x-4">
+          <span class="text-logo font-bold sm:text-4xl text-xl">DIVINE NETWORK</span> 
+          <span class ="font-bold sm:text-4xl text-xl"> introduces</span>
+        </div>
+      </div>
+      
+      <!--Drowpdown feature 1-->
+        <!--button 1-->
+        <div class="flex mt-10 lg:pl-40 pl-8">
+          <button class="feature1-button z-20 mr-4 hover:scale-125 hover:bg-pink-500 transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+
+          <div class="text-white sm:text-3xl text-xl font-bold ">A layer 2 rollup network built on top of Agrorand</div>
+        </div>
+
+        <!--content 1-->
+        <div class="hidden feature1-menu z-30 pt-2 ">
+          <div class="text-white xl:w-2/3 w-5/6 flex lg:pl-52 pl-12">
+          <span class ="bg-black">
+            Built on Algorand, as a layer 2 network, specifically a "rollup", Divine Network moves state data and computation off-chain, while keeping some data on the layer 1 for security. It inherits all of Algorand's security and decentralization, while still being blazingly fast and scalable</div>
+          </span>
+          </div>
+
+        <script>
+          const btn1 = document.querySelector("button.feature1-button");
+          const menu1 = document.querySelector(".feature1-menu");
+  
+          btn1.addEventListener("click", () => {
+            menu1.classList.toggle("hidden");
+          });
+        </script>
+
+      <!--Drowpdown feature 2-->
+        <!--button 2-->
+        <div class="flex mt-10 lg:pl-40 pl-8">
+          <button class="feature2-button z-20 mr-4 hover:scale-125 hover:bg-pink-500 transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          
+          <div class="text-white sm:text-3xl text-xl font-bold "> EVM integration</div>
+        </div>
+
+        <!--content 2-->
+        <div class="hidden feature2-menu z-30 pt-1">
+          <div class="text-white xl:w-2/3 w-5/6 flex lg:pl-52 pl-12 ">
+            <span class="bg-black">
+              Divine Network has the EVM as the core contract execution environment. It is fully compatible with the original EVM that is from Ethereum and in fact is based on an EVM implementation of an existing Ethereum client, which works perfectly well with our rollup model. The transaction format, the address format, signatures, etc are also the same as the original Ethereum.</div>
+            </span>
+          </div>
+
+        <script>
+          const btn2 = document.querySelector("button.feature2-button");
+          const menu2 = document.querySelector(".feature2-menu");
+  
+          btn2.addEventListener("click", () => {
+            menu2.classList.toggle("hidden");
+          });
+        </script>
+
+      <!--Drowpdown feature 3-->
+        <!--button 3-->
+        <div class="flex mt-10 lg:pl-40 pl-8">
+          <button class="feature3-button z-20 mr-4 hover:scale-125 hover:bg-pink-500 transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          
+          <div class="text-white sm:text-3xl text-xl font-bold">Proofless rollup</div>
+        </div>
+
+        <!--content 3-->
+        <div class="hidden feature3-menu z-30 ">
+          <div class="text-white xl:w-2/3 w-5/6 flex pt-1 lg:pl-52 pl-12">
+            <span class="bg-black">
+              Prooflessness is the most unique design of Divine Network compared to other rollups. The only reason that many rollups like Arbitrum or zksync require optimistic fraud proof or zk proof is because they are reliant on the layer 1's native token, which introduces the act of bridging the token between the layer 1 and the layer 2. Divine Network has its native token so Divine Network do not need proof, making Divine Network more efficient, easier to upgrade, and simpler to implement decentralized sequencers
+            </span>
+          </div>
+        </div>
+
+        <script>
+          const btn3 = document.querySelector("button.feature3-button");
+          const menu3 = document.querySelector(".feature3-menu");
+  
+          btn3.addEventListener("click", () => {
+            menu3.classList.toggle("hidden");
+          });
+        </script>
+  
+      <!--Drowpdown feature 4-->
+        <!--button 4-->
+        <div class="flex mt-10 lg:pl-40 pl-8">
+          <button class="feature4-button z-20 mr-4 hover:scale-125 hover:bg-pink-500 transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          
+          <div class="text-white sm:text-3xl text-xl font-bold">Decentralized sequencers</div>
+        </div>
+
+        <!--content 4-->
+        <div class="hidden feature4-menu z-30 ">
+          <div class="text-white xl:w-2/3 w-5/6 flex pt-1 lg:pl-52 pl-12">
+            <span class="bg-black">
+              Divine Network's sequencer is fully decentralized, anyone can become a sequencer in the network if they wanted to. There is no stake needed, no governance token needed whatsoever, you can run a sequencer node right from your personal computer, just be sure to have some Algos to pay for gas when submitting rollup batches. This is possible thanks to our proof-less model.
+          </div>
+        </div>
+
+        <script>
+          const btn4 = document.querySelector("button.feature4-button");
+          const menu4 = document.querySelector(".feature4-menu");
+  
+          btn4.addEventListener("click", () => {
+            menu4.classList.toggle("hidden");
+          });
+        </script>
+
+
+        <!--footer page 2-->
+        <img class="lg:pt-32 md:pt-24 sm:pt-8 pt-4" src="assets/page2-footer.png"/>
+      </div>
+    <!--Page 3-->
+    <!--Header-->
+    <div class = "flex z-10 justify-center">
+      <div class = " flex z-10 text-white sm:pt-8 pt-4 z-10 space-x-4">
+        <span class ="font-bold sm:text-4xl text-xl"> What</span>
+        <span class="text-logo font-bold sm:text-4xl text-xl">DIVINE NETWORK</span> 
+        <span class ="font-bold sm:text-4xl text-xl"> brings</span>
+      </div>
+    </div>
+
+    <div class = "flex md:flex-row flex-col z-10 justify-evenly  md:pt-20 pt-4">
+      <div class="flex flex-col justify-evenly">
+        <div class ="font-semibold md:text-3xl text-xl text-btn-blue pl-14 w-5/6 py-4 hover:scale-105 transition-all duration-500">
+          Blazing fast transactions and low gas fees, scaling Algorand 
+        </div> 
+        
+        <div class ="font-semibold md:text-3xl text-xl text-btn-sea pl-14 w-5/6 py-4 hover:scale-105 transition-all duration-500">
+          Integrating EVM where EVM based dapps can fully function 
+        </div>
+        
+        <div class ="font-semibold md:text-3xl text-xl text-btn-pink pl-14 w-5/6 py-4 hover:scale-105 transition-all duration-500">
+          Leveraging the decentralization of Algorand with the decentralized sequencers system
+        </div>
+      </div>
+      
+      
+      <img src="./assets/picpage3.png" class="self-center md:h-80 md:w-auto w-52 md:pr-4 pr-0 md:order-last order-first" />
+    </div>
+
+  
+    <!--Footer-->
+    <div class="lg:mt-44 md:mt-32 sm:mt-32 mt-12 pb-4">
+      <img src="./assets/footer.png"/>
+      <div class="flex justify-between h-14">
+        <div class="flex flex-col px-4">
+          <a class="text-logo font-bold" href="">DIVINE NETWORK</a>
+          <span class="flex text-logo italic sm:text-base text-sm">Contact: nguyenphuminh09876543@gmail.com</span>
+        </div>
+
+        <div class="sm:flex hidden z-20 items-center justify-evenly pr-8">
+          <a target="_blank" href="https://divine-network.gitbook.io/divine-network/" class="text-white px-1">Documentation</a>
+          <a target="_blank" href="https://github.com/divine-network/divine-network/blob/main/packages/client/docs/README.md" class="text-white px-1">Build</a>
+          <a target="_blank" href="https://github.com/divine-network/divine-network" class="text-white px-1">Github</a>
+          
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+</body>
+</html>
